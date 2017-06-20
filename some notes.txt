@@ -1,0 +1,21 @@
+message.reply('d(owo )')
+message.channel.sendMessage('d(owo )')
+soundfiles are in (.dca)
+
+
+Hello!, if just have been encountering this error lately in
+my code. When my then statement tries to access the promise
+
+channel.join()
+          .then((connection) => {...
+
+i get this error:
+FFMPEG was not found on your system, so audio cannot be played.
+Please make sure FFMPEG is installed and in your PATH.
+
+is this the module to help combat this?
+npm install discord.js-arbitrary-ffmpeg --save
+if so, is there documentation how to use it properly?
+
+Nope, its this
+npm i -g ffmpeg-binaries
