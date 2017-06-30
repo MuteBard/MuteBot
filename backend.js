@@ -75,8 +75,8 @@ client.on("message", (message) => {
   var result = args.join(' ')
 
   if(message.author.bot)return;
-  var embed = new Discord.RichEmbed().setDescription(`${message.author.username} : ${message.content}`)
-  client.channels.get("326577490526994432").send({embed})
+  var embed = new Discord.RichEmbed().setDescription(`${message.author.username} :   ${message.content}`)
+  client.channels.get("326707031316758528").send({embed})
   if(!message.content.startsWith(tag)) return;
 
 
