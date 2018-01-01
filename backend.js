@@ -14,7 +14,7 @@ client.on("ready",() => {
 
 client.on("message", (message) => {
   if(message.content.startsWith("ping")){
-    client.user.setStatus(result != "" ? result  : "online")
+    // client.user.setStatus(result != "" ? result  : "online")
     message.channel.sendMessage("pong")
   }
 })
