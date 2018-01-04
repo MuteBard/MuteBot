@@ -22,29 +22,236 @@ CREATE TABLE gear(
 --image links
   geari varchar,
 --ability data
-  main varchar,
   brand varchar,
+  main varchar,
+  
 --color
   color1 varchar,
   color2 varchar,
 --owner
   annieshop boolean
 --type
-  denim boolean,
-  leather boolean,
-  jacket boolean,
-  sweater boolean,
-  t-shirt boolean,
-  sleeves boolean,
+  catagory varchar,
   winter boolean,
   spring boolean,
   summer boolean,
   fall boolean,
 --misc
   costig integer,
-  costsn varchar,
   rarity integer,
 );
+
+INSERT INTO gear VALUES
+  (DEFAULT,"18K Aviators", "",
+  "Rockenberg", "Last-Ditch Effort", "brown", "black",
+  "F","Headgear",
+  "T","T","F","F",
+  12000, 3),
+
+  (DEFAULT,"Annaki Beret", "",
+  "Annaki", "Ink Resistance Up", "orange", "white",
+  "F","Headgear",
+  "F","F","F","T",
+  11500, 3),
+
+  (DEFAULT,"Annaki Mask", "",
+  "Annaki", "Opening Gambit", "black", "red ",
+  "F","Headgear",
+  "F","F","F","F  ",
+  3600, 2),
+
+  (DEFAULT,"Armor Helmet Replica", "",
+  "Cuttlegear", "Tenacity", "black", "multi",
+  "F","Headgear",
+  "T","T","F","F",
+  NULL, 2),
+
+  (DEFAULT,"Backwards Cap", "",
+  "Zekko", "Quick Respawn", "multi", "black",
+  "F","Headgear",
+  "T","T","T","F",
+  700, 1),
+
+  (DEFAULT,"Bamboo Hat", "",
+  "Inkline", "Ink Saver (Main)", "multi", NULL,
+  "F","Headgear",
+  "T","T","T","F",
+  2200, 2),
+
+  (DEFAULT,"B-ball Headband", "",
+  "Inkline", "Ink Saver (Main)", "multi", NULL,
+  "F","Headgear",
+  "T","T","T","F",
+  300, 1),
+
+  (DEFAULT,"Bike Helmet", "",
+  "Skalop", "Ink Recovery Up", "multi", "black",
+  "F","Headgear",
+  "T","T","F","F",
+  4800, 3),
+
+  (DEFAULT,"Black Arrowbands", "",
+  "Zekko", "Tenacity", "black", "multi",
+  "F","Headgear",
+  "T","T","F","F",
+  2800, 2),
+
+  (DEFAULT,"Blowfish Bell Hat", "",
+  "F","Firefin", "Ink Recovery Up", "multi", NULL,
+  "Headgear",
+  "T","F","T","T",
+  850, 1),
+
+  (DEFAULT,"Bobble Hat", "",
+  "Splash Mob", "Quick Super Jump", "multi", "white",
+  "F","Headgear",
+  "F","F","F","T",
+  2000, 2),
+
+  (DEFAULT,"Bucket Hat", "",
+  "SquidForce", "Special Saver", "black", "white",
+  "F","Headgear",
+  "T","T","T","F",
+  400, 1),
+
+  (DEFAULT,"Camo Mesh", "",
+  "Firefin", "Swim Speed Up", "multi", "gray",
+  "F","Headgear",
+  "T","T","T","F",
+  400, 1),
+
+  (DEFAULT,"Camping Hat", "",
+  "Inkline", "Special Power Up", "multi", "yellow",
+  "F","Headgear",
+  "T","T","T","F",
+  800, 1),
+
+  (DEFAULT,"Classic Straw Boater", "",
+  "Skalop", "Special Power Up", "black", "multi",
+  "F","Headgear",
+  "T","T","T","F",
+  1500, 2),
+
+ (DEFAULT,"Cycle King Cap", "",
+  "Tentatek", "Special Power Up", "multi", "white",
+  "F","Headgear",
+  "T","T","F","F",
+  1500, 2),
+
+ (DEFAULT,"Cycling Cap", "",
+  "Zink", "Sub Power Up", "multi", "black",
+  "F","Headgear",
+  "T","T","F","F",
+  800, 1),
+
+  (DEFAULT,"Designer Headphones", "",
+  "Forge", "Ink Saver (Sub)", "purple", "green",
+  "F","Headgear",
+  "T","T","T","T",
+  2500, 2),
+
+  (DEFAULT,"Double Egg Shades", "",
+  "Zekko", "Run Speed Up", "black", NULL,
+  "F","Headgear",
+  "T","T","T","F",
+  2200, 2),
+
+  (DEFAULT,"Dust Blocker 2000", "",
+  "Grizzco", NULL, "white", "blue",
+  "F","Headgear",
+  "T","T","T","T",
+  NULL, 3),
+
+  (DEFAULT,"Face Visor", "",
+  "Toni Kensa", "Bomb Defense Up", "black", NULL,
+  "F","Headgear",
+  "T","T","T","T",
+  10300, 3),
+
+  (DEFAULT,"Fake Contacts", "",
+  "Tentatek", "Special Charge Up", "none", NULL,
+  "F","Headgear",
+  "T","T","T","T",
+  2000, 2),
+
+  (DEFAULT,"Firefin Facemask", "",
+  "Firefin", "Run Speed Up", "black", "white",
+  "F","Headgear",
+  "T","T","T","T",
+  650, 1),
+
+  (DEFAULT,"FishFry Biscuit Bandana", "",
+  "Firefin", "Special Power Up", "multi", NULL,
+  "F","Headgear",
+  "T","T","T","T",
+  1250, 1),
+
+  (DEFAULT,"FishFry Visor", "",
+  "Firefin", "Special Charge Up", "multi", "black",
+  "F","Headgear",
+  "T","T","T","T",
+  500, 1),
+
+  (DEFAULT,"Five-Panel Cap", "",
+  "Firefin", "Comeback", "multi", "black",
+  "F","Headgear",
+  "T","T","T","T",
+  1800, 2),
+
+  (DEFAULT,"Forge Mask", "",
+  "Firefin", "Cold-Blooded", "multi", "white",
+  "F","Headgear",
+  "T","T","T","T",
+  1400, 1),
+
+  (DEFAULT,"Fugu Bell Hat", "",
+  "Firefin", "Quick Respawn", "multi", "black",
+  "F","Headgear",
+  "T","T","T","T",
+  1700, 2),
+
+  (DEFAULT,"Full Moon Glasses", "",
+  "Krak-On", "Quick Super Jump", "orange", NULL,
+  "F","Headgear",
+  "T","T","T","T",
+  600, 1),
+
+  (DEFAULT,"Half-Rim Glasses", "",
+  "Splash Mob", "Special Power Up", "purple", NULL,
+  "F","Headgear",
+  "T","T","T","T",
+  4100, 2),
+
+  (DEFAULT,"Headlamp Helmet", "",
+  "Grizzco", NULL, "orange", "black",
+  "F","Headgear",
+  "T","T","T","T",
+  NULL, 3),
+
+  (DEFAULT,"Hero Headphones Replica", "",
+  "Cuttlegear", "Special Saver", "black", "multio",
+  "F","Headgear",
+  "T","T","T","T",
+  NULL, 2),
+
+  (DEFAULT,"Hero Headset Replica", "",
+  "Cuttlegear", "Run Speed Up", "black", "multi",
+  "F","Headgear",
+  "T","T","T","T",
+  NULL, 2),
+
+  (DEFAULT,"Hickory Work Cap", "",
+  "Krak-On", "Special Power Up", "multi", "white",
+  "F","Headgear",
+  "T","T","T","T",
+  8700, 3),
+
+  (DEFAULT,"Hockey Helmet", "",
+  "Forge", "Cold-Blooded", "multi", NULL,
+  "F","Headgear",
+  "T","T","T","T",
+  9900, 3),
+
 
 INSERT INTO abilities VALUES
   (DEFAULT, "Ability Doubler", "http://res.cloudinary.com/dtvznpuay/image/upload/v1514924243/S2_Ability_Ability_Doubler_hu31sq.png"),
@@ -98,9 +305,3 @@ INSERT INTO brands VALUES
   (DEFAULT, "Zink", "http://res.cloudinary.com/dtvznpuay/image/upload/v1514932215/S2_Brand_Zink_jthryx.png", "Quick Super Jump", "Quick Respawn"),
 
 
-INSERT INTO gear VALUES
-  (DEFAULT,
-  "Acerola Rain Boots",
-  "http://res.cloudinary.com/dtvznpuay/image/upload/v1514858160/S2_Gear_Shoes_Acerola_Rain_Boots_f4rbym.png",
-  "Inkline", "Run Speed Up",
-  "Red", "blue" ,600, 1500, 1),
